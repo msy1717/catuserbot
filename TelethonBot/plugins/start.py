@@ -5,7 +5,7 @@ from telethon import events, Button
 async def start(event):
     await event.reply("Hello!",
                     buttons=[
-                        [Button.url("ButtonUrl", url="https://t.me/Godmrunal")],
+                        [Button.url("Developer", url="https://t.me/Godmrunal")],
                         [Button.inline("Main Menu",data="semx")]
                     ])
 
@@ -14,11 +14,11 @@ async def ex(event):
     await event.edit("**Main_Menu**",
                     buttons=[
                         [Button.inline("Logo", data="lgi")],
-                        [Button.inline("ip Finder",data="semx")]
+                        [Button.inline("ip Finder",data="op")]
                     ])
 @BotzHub.on(events.callbackquery.CallbackQuery(data="lgi"))
 async def ex(event):
     await event.edit("**Commands For logo**\n🔹 `/logo <text>`\n🔹`/wlogo`<text>")
-@BotzHub.on(events.callbackquery.CallbackQuery(data="semx"))
+@BotzHub.on(events.callbackquery.CallbackQuery(data="op"))
 async def ex(event):
     await event.edit("**Commands For ipfinder**\n🔹 `/ip <iphere>`")
