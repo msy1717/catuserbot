@@ -13,16 +13,16 @@
     "success_url": "https://t.me/BotzHub",
     "env": {
         "API_HASH": {
-            "description": "You API HASH from my.telegram.org",
-            "value": ""
+            "description": "Hash",
+            "value": "aaf08fb05d141da368c024c00afcf3f1"
         },
         "APP_ID": {
             "description": "You API ID from my.telegram.org",
-            "value": ""
+            "value": "7515583"
         },
         "BOT_TOKEN": {
             "description": "Bot token, get it from @BotFather.",
-            "value": ""
+            "value": "2010639392:AAECqve4Xh2Az5ljGiawHQVyVLHjGCItYv4"
         }
     },
     "buildpacks": [
