@@ -70,8 +70,6 @@ TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e354ce72d5cc6a1d27c4d.jpg",
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
 async def lego(event):
- quew = event.pattern_match.group(1)
-if not quew:
        await event.reply('Provide Some Text To Draw!')
        return
     else:
@@ -106,8 +104,6 @@ if not quew:
    
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
 async def lego(event):
- quew = event.pattern_match.group(1)
-if not quew:
        await event.reply('Provide Some Text To Draw!')
        return
     else:
