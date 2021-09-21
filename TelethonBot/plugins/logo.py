@@ -7,7 +7,7 @@ import random, re
 import glob
 import time
 from telethon.tl.types import InputMessagesFilterPhotos
-from  import telethn as tbot TelethonBot
+from TelethonBot import telethn as tbot 
 
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
@@ -37,7 +37,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "LogoByLayla.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @LaylaList Support @AwesomeSupport")
+    await BotzHub.send_file(event.chat_id, fname2, caption="Made By @LaylaList Support @AwesomeSupport")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
