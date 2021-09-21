@@ -7,6 +7,7 @@ import random, re
 import glob
 import time
 from telethon.tl.types import InputMessagesFilterPhotos
+from  import telethn as tbot TelethonBot
 
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
