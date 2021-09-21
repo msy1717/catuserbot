@@ -1,5 +1,3 @@
-# By < @xditya >
-# // @BotzHub //
 
 import glob
 from pathlib import Path
