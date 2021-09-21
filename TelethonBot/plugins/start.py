@@ -1,5 +1,7 @@
 from .. import BotzHub
 from telethon import events, Button
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
