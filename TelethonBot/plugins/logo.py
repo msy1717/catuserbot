@@ -11,6 +11,8 @@ from telethon.tl.types import InputMessagesFilterPhotos
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
 async def lego(event):
+ quew = event.pattern_match.group(1)
+      if not quew:
        await event.reply('Provide Some Text To Draw!')
        return
     else:
@@ -18,13 +20,13 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./LaylaRobot/resources/blackbg.jpg')
+    img = Image.open('./TelethonBot/resources/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./LaylaRobot/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./TelethonBot/resources/Chopsic.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
