@@ -1,5 +1,3 @@
-# By < @xditya >
-# // @BotzHub //
 
 from telethon import TelegramClient
 from decouple import config
