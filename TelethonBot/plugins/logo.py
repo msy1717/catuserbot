@@ -9,7 +9,7 @@ import time
 from telethon.tl.types import InputMessagesFilterPhotos
 
 
-@BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
+@BotzHub.on(events.NewMessage(incoming=True, pattern="/logo(.*)"
 async def lego(event):
  quew = event.pattern_match.group(1)
  if not quew:
