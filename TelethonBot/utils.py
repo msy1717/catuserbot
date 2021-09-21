@@ -1,5 +1,4 @@
-# By < @xditya >
-# // @BotzHub //
+
 
 import sys
 import logging
