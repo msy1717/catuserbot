@@ -18,7 +18,7 @@ async def ex(event):
                     ])
 @BotzHub.on(events.callbackquery.CallbackQuery(data="lgi"))
 async def ex(event):
-    await event.edit("**Commands For logo**\n🔹 `/logo <text>`\n🔹`/wlogo`<text>"")
+    await event.edit("**Commands For logo**\n🔹 `/logo <text>`\n🔹`/wlogo`<text>")
 @BotzHub.on(events.callbackquery.CallbackQuery(data="semx"))
 async def ex(event):
     await event.edit("**Commands For ipfinder**\n🔹 `/ip <iphere>`")
