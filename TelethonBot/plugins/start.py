@@ -1,6 +1,5 @@
 from .. import BotzHub
 from telethon import events, Button
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 
 
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/start"))
@@ -20,28 +19,8 @@ async def ex(event):
                     ])
 @BotzHub.on(events.callbackquery.CallbackQuery(data="lgi"))
 async def ex(event):
-    await event.edit("**Commands For logo**\n🔹 `/logo <text>`\n🔹`/wlogo`<text>",parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,#when needed
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Back", callback_data="semx")
-                 ]
-                ]
-            ),
-        )
+    await event.edit("**Commands For logo**\n🔹 `/logo <text>`\n🔹`/wlogo`<text>")
     
 @BotzHub.on(events.callbackquery.CallbackQuery(data="op"))
 async def ex(event):
-    await event.edit("**Commands For ipfinder**\n🔹 `/ip <iphere>`",parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Back", callback_data="semx")
-                 ]
-                ]
-            ),
-        )
-    
-        
+    await event.edit("**Commands For ipfinder**\n🔹 `/ip <iphere>`")
