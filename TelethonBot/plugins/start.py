@@ -16,10 +16,9 @@ async def ex(event):
                         [Button.inline("Logo", data="lgi")],
                         [Button.inline("ip Finder",data="semx")]
                     ])
-    @BotzHub.on(events.callbackquery.CallbackQuery(data="lgi"))
+@BotzHub.on(events.callbackquery.CallbackQuery(data="lgi"))
 async def ex(event):
     await event.edit("**Commands For logo**\n🔹 `/logo <text>`\n🔹`/wlogo`<text>"")
-    
-    @BotzHub.on(events.callbackquery.CallbackQuery(data="semx"))
+@BotzHub.on(events.callbackquery.CallbackQuery(data="semx"))
 async def ex(event):
     await event.edit("**Commands For ipfinder**\n🔹 `/ip <iphere>`")
