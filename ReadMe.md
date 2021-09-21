@@ -1,7 +1,7 @@
 # Telethon Bot
 Simple base used to make a Telegram Bot in [telethon](https://github.com/LonamiWebs/Telethon).
    
-Join [@BotzHub](https://t.me/BotzHub)!
+Join [@BotzHub](https://t.me/botsbymrunal)!
     
 Note: The `client`, here, is named `BotzHub`.
    
@@ -12,4 +12,4 @@ Fork and add your plugins to [TelethonBot/plugins](./TelethonBot/plugins), and, 
 
 # Credits
 - [Telethon.](https://github.com/LonamiWebs/Telethon)
-- [Me.](https://t.me/xditya)
+- [Me.](https://t.me/Godmrunal)
