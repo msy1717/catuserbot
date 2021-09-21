@@ -71,9 +71,7 @@ TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e354ce72d5cc6a1d27c4d.jpg",
 @BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
 async def lego(event):
        await event.reply('Provide Some Text To Draw!')
-       return
     else:
-       pass
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
@@ -102,12 +100,10 @@ async def lego(event):
 
 
    
-@BotzHub.on(events.NewMessage(incoming=True, pattern="/logo"))
+@BotzHub.on(events.NewMessage(incoming=True, pattern="/wlogo"))
 async def lego(event):
        await event.reply('Provide Some Text To Draw!')
-       return
     else:
-       pass
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
